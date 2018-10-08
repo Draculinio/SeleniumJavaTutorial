@@ -11,25 +11,36 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 public class PageLogin {
 	private WebDriver driver;
-	private By userField;
-	private By passwordField;
+	
+	@FindBy(how=How.NAME,using="userName")
+	private WebElement userFieldElement;
+	//private By userField;
+	@FindBy(how=How.NAME,using="password")
+	private WebElement passwordFieldElement;
+	//private By passwordField;
 	private By loginButton;
 	private By fields;
 	public PageLogin(WebDriver driver) {
 		this.driver = driver;
-		userField = By.name("userName");
-		passwordField = By.name("password");
+		//userField = By.name("userName");
+		//passwordField = By.name("password");
 		loginButton = By.name("login");
 		fields = By.tagName("input");
+		PageFactory.initElements(driver, this);
 	}
 	
 	public void login(String user,String pass) {
-		driver.findElement(userField).sendKeys(user);
-		driver.findElement(passwordField).sendKeys(pass);
+		userFieldElement.sendKeys(user);
+		//driver.findElement(userField).sendKeys(user);
+		passwordFieldElement.sendKeys(pass);
+		//driver.findElement(passwordField).sendKeys(pass);
 		driver.findElement(loginButton).click();
 		/*File myScreenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {

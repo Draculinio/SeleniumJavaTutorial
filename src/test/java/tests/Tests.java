@@ -36,18 +36,18 @@ public class Tests {
 		//driver.manage().window().setSize(new Dimension(200,200));
 		//driver.manage().window().setPosition(new Point(500,500));
 		driver.navigate().to("http://newtours.demoaut.com/");
-		JavascriptExecutor javaScriptExecutor = (JavascriptExecutor)driver;
-		String googleWindow =  "window.open('http://www.google.com')";
-		javaScriptExecutor.executeScript(googleWindow);
-		tabs = new ArrayList<String> (driver.getWindowHandles());
+		//JavascriptExecutor javaScriptExecutor = (JavascriptExecutor)driver;
+		//String googleWindow =  "window.open('http://www.google.com')";
+		//javaScriptExecutor.executeScript(googleWindow);
+		//tabs = new ArrayList<String> (driver.getWindowHandles());
 		
 	}
 	
 	@Test
 	public void loginIncorrecto() {
 		WebDriverManager.setWindowSize(driver, "maximized");
-		driver.switchTo().window(tabs.get(1)).navigate().to("http://www.youtube.com/user/Draculinio");
-		driver.switchTo().window(tabs.get(0));
+		//driver.switchTo().window(tabs.get(1)).navigate().to("http://www.youtube.com/user/Draculinio");
+		//driver.switchTo().window(tabs.get(0));
 		PageLogin pageLogin = new PageLogin(driver);
 		PageLogon pageLogon = new PageLogon(driver);
 		pageLogin.login("user", "user");
@@ -86,7 +86,8 @@ public class Tests {
 		if(!result.isSuccess()){
 			Screenshooter.takeScreenshot("Error", driver);
 		}
-		driver.switchTo().window(tabs.get(1)).close();
-		driver.switchTo().window(tabs.get(0)).close();
+		//driver.switchTo().window(tabs.get(1)).close();
+		//driver.switchTo().window(tabs.get(0)).close();
+		driver.close();
 	}
 }

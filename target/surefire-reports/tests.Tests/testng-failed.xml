@@ -6,10 +6,7 @@
       <class name="tests.Tests">
         <methods>
           <include name="login"/>
-          <include name="loginIncorrecto"/>
           <include name="tearDown"/>
-          <include name="pruebaTres"/>
-          <include name="pruebaCantidadDeCampos"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.Tests -->
