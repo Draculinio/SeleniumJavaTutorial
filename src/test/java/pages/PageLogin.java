@@ -21,27 +21,27 @@ public class PageLogin {
 	
 	@FindBy(how=How.NAME,using="userName")
 	private WebElement userFieldElement;
-	//private By userField;
 	@FindBy(how=How.NAME,using="password")
 	private WebElement passwordFieldElement;
-	//private By passwordField;
-	private By loginButton;
-	private By fields;
+	@FindBy(how=How.NAME,using="login")
+	private WebElement loginButtonElement;
+	@FindBy(how=How.TAG_NAME,using="input")
+	private List<WebElement> fields;
+	
+	//private By fields;
 	public PageLogin(WebDriver driver) {
 		this.driver = driver;
 		//userField = By.name("userName");
 		//passwordField = By.name("password");
-		loginButton = By.name("login");
-		fields = By.tagName("input");
+		//loginButton = By.name("login");
+		//fields = By.tagName("input");
 		PageFactory.initElements(driver, this);
 	}
 	
 	public void login(String user,String pass) {
 		userFieldElement.sendKeys(user);
-		//driver.findElement(userField).sendKeys(user);
 		passwordFieldElement.sendKeys(pass);
-		//driver.findElement(passwordField).sendKeys(pass);
-		driver.findElement(loginButton).click();
+		loginButtonElement.click();
 		/*File myScreenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
 			FileUtils.copyFile(myScreenshot, new File("LOGIN "+System.currentTimeMillis()+".png"));
@@ -53,15 +53,15 @@ public class PageLogin {
 	}
 	
 	public void fields_login(String user, String pass) {
-		List<WebElement> loginFields = driver.findElements(fields);
-		loginFields.get(1).sendKeys(user);
-		loginFields.get(2).sendKeys(pass);
+		//List<WebElement> loginFields = driver.findElements(fields);
+		fields.get(1).sendKeys(user);
+		fields.get(2).sendKeys(pass);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	public void verifyFields() {
-		List<WebElement> loginFields = driver.findElements(fields);
-		System.out.println(loginFields.size());
-		Assert.assertTrue(loginFields.size()==5);
+		//List<WebElement> loginFields = driver.findElements(fields);
+		System.out.println(fields.size());
+		Assert.assertTrue(fields.size()==5);
 	}
 }

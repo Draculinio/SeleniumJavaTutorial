@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="tests.Tests" duration-ms="52414" started-at="2018-10-08T14:05:40Z" finished-at="2018-10-08T14:06:32Z">
+  <suite name="tests.Tests" duration-ms="47626" started-at="2018-10-16T20:40:14Z" finished-at="2018-10-16T20:41:02Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="52414" started-at="2018-10-08T14:05:40Z" finished-at="2018-10-08T14:06:32Z">
+    <test name="Command line test" duration-ms="47626" started-at="2018-10-16T20:40:14Z" finished-at="2018-10-16T20:41:02Z">
       <class name="tests.Tests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@13fee20c]" name="setUp" is-config="true" duration-ms="8063" started-at="2018-10-08T14:05:40Z" finished-at="2018-10-08T14:05:48Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@13fee20c]" name="setUp" is-config="true" duration-ms="7832" started-at="2018-10-16T20:40:14Z" finished-at="2018-10-16T20:40:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="login()[pri:0, instance:tests.Tests@13fee20c]" name="login" duration-ms="13924" started-at="2018-10-08T14:05:48Z" finished-at="2018-10-08T14:06:02Z">
+        <test-method status="FAIL" signature="login()[pri:0, instance:tests.Tests@13fee20c]" name="login" duration-ms="13247" started-at="2018-10-16T20:40:22Z" finished-at="2018-10-16T20:40:35Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/font"}
@@ -22,8 +22,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'DESKTOP-73KEIQS', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50816}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: ef871a8d2dad4fcd79c01e4f7997fe10
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60549}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 523f0322fa82847fea0204d8c13b4ae2
 *** Element info: {Using=xpath, value=/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/font}]]>
             </message>
             <full-stacktrace>
@@ -35,8 +35,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'DESKTOP-73KEIQS', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50816}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: ef871a8d2dad4fcd79c01e4f7997fe10
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60549}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 523f0322fa82847fea0204d8c13b4ae2
 *** Element info: {Using=xpath, value=/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/font}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -96,7 +96,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@13fee20c]" name="tearDown" is-config="true" duration-ms="763" started-at="2018-10-08T14:06:02Z" finished-at="2018-10-08T14:06:03Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@13fee20c]" name="tearDown" is-config="true" duration-ms="529" started-at="2018-10-16T20:40:35Z" finished-at="2018-10-16T20:40:36Z">
           <params>
             <param index="0">
               <value>
@@ -107,15 +107,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@13fee20c]" name="setUp" is-config="true" duration-ms="7196" started-at="2018-10-08T14:06:03Z" finished-at="2018-10-08T14:06:10Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@13fee20c]" name="setUp" is-config="true" duration-ms="5793" started-at="2018-10-16T20:40:36Z" finished-at="2018-10-16T20:40:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginIncorrecto()[pri:0, instance:tests.Tests@13fee20c]" name="loginIncorrecto" duration-ms="3223" started-at="2018-10-08T14:06:10Z" finished-at="2018-10-08T14:06:13Z">
+        <test-method status="PASS" signature="loginIncorrecto()[pri:0, instance:tests.Tests@13fee20c]" name="loginIncorrecto" duration-ms="3281" started-at="2018-10-16T20:40:41Z" finished-at="2018-10-16T20:40:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginIncorrecto -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@13fee20c]" name="tearDown" is-config="true" duration-ms="409" started-at="2018-10-08T14:06:13Z" finished-at="2018-10-08T14:06:13Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@13fee20c]" name="tearDown" is-config="true" duration-ms="153" started-at="2018-10-16T20:40:45Z" finished-at="2018-10-16T20:40:45Z">
           <params>
             <param index="0">
               <value>
@@ -126,15 +126,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@13fee20c]" name="setUp" is-config="true" duration-ms="5884" started-at="2018-10-08T14:06:13Z" finished-at="2018-10-08T14:06:19Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@13fee20c]" name="setUp" is-config="true" duration-ms="5159" started-at="2018-10-16T20:40:45Z" finished-at="2018-10-16T20:40:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="pruebaCantidadDeCampos()[pri:0, instance:tests.Tests@13fee20c]" name="pruebaCantidadDeCampos" duration-ms="68" started-at="2018-10-08T14:06:19Z" finished-at="2018-10-08T14:06:19Z">
+        <test-method status="PASS" signature="pruebaCantidadDeCampos()[pri:0, instance:tests.Tests@13fee20c]" name="pruebaCantidadDeCampos" duration-ms="52" started-at="2018-10-16T20:40:50Z" finished-at="2018-10-16T20:40:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pruebaCantidadDeCampos -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@13fee20c]" name="tearDown" is-config="true" duration-ms="238" started-at="2018-10-08T14:06:19Z" finished-at="2018-10-08T14:06:20Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@13fee20c]" name="tearDown" is-config="true" duration-ms="212" started-at="2018-10-16T20:40:50Z" finished-at="2018-10-16T20:40:50Z">
           <params>
             <param index="0">
               <value>
@@ -145,15 +145,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@13fee20c]" name="setUp" is-config="true" duration-ms="6316" started-at="2018-10-08T14:06:20Z" finished-at="2018-10-08T14:06:26Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@13fee20c]" name="setUp" is-config="true" duration-ms="5137" started-at="2018-10-16T20:40:50Z" finished-at="2018-10-16T20:40:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="pruebaTres()[pri:0, instance:tests.Tests@13fee20c]" name="pruebaTres" duration-ms="6120" started-at="2018-10-08T14:06:26Z" finished-at="2018-10-08T14:06:32Z">
+        <test-method status="PASS" signature="pruebaTres()[pri:0, instance:tests.Tests@13fee20c]" name="pruebaTres" duration-ms="6012" started-at="2018-10-16T20:40:55Z" finished-at="2018-10-16T20:41:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pruebaTres -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@13fee20c]" name="tearDown" is-config="true" duration-ms="132" started-at="2018-10-08T14:06:32Z" finished-at="2018-10-08T14:06:32Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@13fee20c]" name="tearDown" is-config="true" duration-ms="152" started-at="2018-10-16T20:41:01Z" finished-at="2018-10-16T20:41:02Z">
           <params>
             <param index="0">
               <value>
