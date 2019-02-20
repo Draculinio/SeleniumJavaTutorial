@@ -19,22 +19,18 @@ import org.testng.Assert;
 public class PageLogin {
 	private WebDriver driver;
 	
-	@FindBy(how=How.NAME,using="userName")
+	@FindBy(name="userName")
 	private WebElement userFieldElement;
-	@FindBy(how=How.NAME,using="password")
+	@FindBy(name="password")
 	private WebElement passwordFieldElement;
-	@FindBy(how=How.NAME,using="login")
+	@FindBy(name="login")
 	private WebElement loginButtonElement;
-	@FindBy(how=How.TAG_NAME,using="input")
+	@FindBy(tagName="input")
 	private List<WebElement> fields;
 	
 	//private By fields;
 	public PageLogin(WebDriver driver) {
 		this.driver = driver;
-		//userField = By.name("userName");
-		//passwordField = By.name("password");
-		//loginButton = By.name("login");
-		//fields = By.tagName("input");
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -42,26 +38,25 @@ public class PageLogin {
 		userFieldElement.sendKeys(user);
 		passwordFieldElement.sendKeys(pass);
 		loginButtonElement.click();
-		/*File myScreenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		try {
-			FileUtils.copyFile(myScreenshot, new File("LOGIN "+System.currentTimeMillis()+".png"));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}*/
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	public void fields_login(String user, String pass) {
-		//List<WebElement> loginFields = driver.findElements(fields);
 		fields.get(1).sendKeys(user);
 		fields.get(2).sendKeys(pass);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	public void verifyFields() {
-		//List<WebElement> loginFields = driver.findElements(fields);
-		System.out.println(fields.size());
 		Assert.assertTrue(fields.size()==5);
+	}
+	
+	public void putTitleInUserField() {
+		String title = driver.getTitle();
+		userFieldElement.sendKeys(driver.getTitle());
+		
+		//Assert.assertEquals(driver.getCurrentUrl(), expected);
+		Assert.assertEquals("Welcome: Mercury Tours", title);
+		
 	}
 }

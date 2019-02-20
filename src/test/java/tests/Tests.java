@@ -1,23 +1,14 @@
 package tests;
 
-import java.io.File;
-import java.io.IOException;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.util.ArrayList;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.Point;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
 import helpers.Screenshooter;
 import helpers.WebDriverManager;
 import pages.PageLogin;
@@ -30,11 +21,15 @@ public class Tests {
 	@BeforeMethod
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
-		driver = new ChromeDriver();
+		
 		//driver.manage().window().maximize();
 		//driver.manage().window().fullscreen();
 		//driver.manage().window().setSize(new Dimension(200,200));
 		//driver.manage().window().setPosition(new Point(500,500));
+		
+		ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.addArguments("--headless");
+		driver = new ChromeDriver(chromeOptions);
 		driver.navigate().to("http://newtours.demoaut.com/");
 		//JavascriptExecutor javaScriptExecutor = (JavascriptExecutor)driver;
 		//String googleWindow =  "window.open('http://www.google.com')";
@@ -79,6 +74,12 @@ public class Tests {
 	public void pruebaCantidadDeCampos() {
 		PageLogin pageLogin = new PageLogin(driver);
 		pageLogin.verifyFields();
+	}
+	
+	@Test
+	public void pruebaTituloEnUsuario() {
+		PageLogin pageLogin = new PageLogin(driver);
+		pageLogin.putTitleInUserField();
 	}
 	
 	@AfterMethod

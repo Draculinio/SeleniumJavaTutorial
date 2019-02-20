@@ -9,6 +9,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class PageReservation {
+	private final static String titleTextIdentifier= "/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/font";
+	private final static String passengersDropIdentifier="passCount";
+	private final static String fromDropIdentifier = "fromPort";
+	private final static String toDropIdentifier = "toPort";
 	private By passengersDrop;
 	private By fromDrop;
 	private By toDrop;
@@ -16,10 +20,10 @@ public class PageReservation {
 	private By titleText;
 	public PageReservation(WebDriver driver) {
 		this.driver = driver;
-		titleText = By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/font");
-		passengersDrop = By.name("passCount");
-		fromDrop = By.name("fromPort");
-		toDrop = By.name("toPort");
+		titleText = By.xpath(titleTextIdentifier);
+		passengersDrop = By.name(passengersDropIdentifier);
+		fromDrop = By.name(fromDropIdentifier);
+		toDrop = By.name(toDropIdentifier);
 	}
 	public void assertPage() {
 		Assert.assertTrue(driver.findElement(titleText).getText().contains("Flight Finder to search"));
@@ -42,8 +46,4 @@ public class PageReservation {
 		Select selectTo = new Select(driver.findElement(toDrop));
 		selectTo.selectByValue(city);
 	}
-	
-	
-	
-	
 }
