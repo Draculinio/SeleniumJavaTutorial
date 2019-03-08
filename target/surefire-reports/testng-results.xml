@@ -2,41 +2,41 @@
 <testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="tests.Tests" duration-ms="102076" started-at="2019-01-24T12:47:31Z" finished-at="2019-01-24T12:49:13Z">
+  <suite name="tests.Tests" duration-ms="60193" started-at="2019-03-08T17:02:44Z" finished-at="2019-03-08T17:03:45Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="102076" started-at="2019-01-24T12:47:31Z" finished-at="2019-01-24T12:49:13Z">
+    <test name="Command line test" duration-ms="60193" started-at="2019-03-08T17:02:44Z" finished-at="2019-03-08T17:03:45Z">
       <class name="tests.Tests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@13fee20c]" name="setUp" is-config="true" duration-ms="7045" started-at="2019-01-24T12:47:31Z" finished-at="2019-01-24T12:47:38Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@1fee20c]" name="setUp" is-config="true" duration-ms="7213" started-at="2019-03-08T17:02:44Z" finished-at="2019-03-08T17:02:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="login()[pri:0, instance:tests.Tests@13fee20c]" name="login" duration-ms="13251" started-at="2019-01-24T12:47:38Z" finished-at="2019-01-24T12:47:51Z">
+        <test-method status="FAIL" signature="login()[pri:0, instance:tests.Tests@1fee20c]" name="login" duration-ms="13442" started-at="2019-03-08T17:02:52Z" description="Login con credenciales correctas" finished-at="2019-03-08T17:03:05Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/font"}
-  (Session info: headless chrome=71.0.3578.98)
+  (Session info: headless chrome=72.0.3626.121)
   (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'DESKTOP-73KEIQS', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+System info: host: 'SOFIA', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_172'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57330}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: fc4a6e7c672066c136bfcd38ccc72cf8
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\Pablo\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54688}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
+Session ID: 74144984f91a445fceb6762d5b1624ef
 *** Element info: {Using=xpath, value=/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/font}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/font"}
-  (Session info: headless chrome=71.0.3578.98)
+  (Session info: headless chrome=72.0.3626.121)
   (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'DESKTOP-73KEIQS', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+System info: host: 'SOFIA', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_172'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57330}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: fc4a6e7c672066c136bfcd38ccc72cf8
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\Pablo\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54688}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
+Session ID: 74144984f91a445fceb6762d5b1624ef
 *** Element info: {Using=xpath, value=/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/font}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -96,87 +96,87 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@13fee20c]" name="tearDown" is-config="true" duration-ms="366" started-at="2019-01-24T12:47:51Z" finished-at="2019-01-24T12:47:51Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@1fee20c]" name="tearDown" is-config="true" duration-ms="906" started-at="2019-03-08T17:03:05Z" finished-at="2019-03-08T17:03:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=FAILURE method=Tests.login()[pri:0, instance:tests.Tests@13fee20c] output={null}]]]>
+                <![CDATA[[TestResult name=login status=FAILURE method=Tests.login()[pri:0, instance:tests.Tests@1fee20c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@13fee20c]" name="setUp" is-config="true" duration-ms="4266" started-at="2019-01-24T12:47:51Z" finished-at="2019-01-24T12:47:56Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@1fee20c]" name="setUp" is-config="true" duration-ms="6488" started-at="2019-03-08T17:03:06Z" finished-at="2019-03-08T17:03:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginIncorrecto()[pri:0, instance:tests.Tests@13fee20c]" name="loginIncorrecto" duration-ms="2768" started-at="2019-01-24T12:47:56Z" finished-at="2019-01-24T12:47:58Z">
+        <test-method status="PASS" signature="loginIncorrecto()[pri:0, instance:tests.Tests@1fee20c]" name="loginIncorrecto" duration-ms="3089" started-at="2019-03-08T17:03:13Z" description="Login Incorrecto" finished-at="2019-03-08T17:03:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginIncorrecto -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@13fee20c]" name="tearDown" is-config="true" duration-ms="49" started-at="2019-01-24T12:47:58Z" finished-at="2019-01-24T12:47:58Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@1fee20c]" name="tearDown" is-config="true" duration-ms="37" started-at="2019-03-08T17:03:16Z" finished-at="2019-03-08T17:03:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginIncorrecto status=SUCCESS method=Tests.loginIncorrecto()[pri:0, instance:tests.Tests@13fee20c] output={null}]]]>
+                <![CDATA[[TestResult name=loginIncorrecto status=SUCCESS method=Tests.loginIncorrecto()[pri:0, instance:tests.Tests@1fee20c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@13fee20c]" name="setUp" is-config="true" duration-ms="4337" started-at="2019-01-24T12:47:58Z" finished-at="2019-01-24T12:48:03Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@1fee20c]" name="setUp" is-config="true" duration-ms="6568" started-at="2019-03-08T17:03:16Z" finished-at="2019-03-08T17:03:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="pruebaCantidadDeCampos()[pri:0, instance:tests.Tests@13fee20c]" name="pruebaCantidadDeCampos" duration-ms="31" started-at="2019-01-24T12:48:03Z" finished-at="2019-01-24T12:48:03Z">
+        <test-method status="PASS" signature="pruebaCantidadDeCampos()[pri:0, instance:tests.Tests@1fee20c]" name="pruebaCantidadDeCampos" duration-ms="29" started-at="2019-03-08T17:03:22Z" description="Verificar la cantidad de campos que tiene el login" finished-at="2019-03-08T17:03:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pruebaCantidadDeCampos -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@13fee20c]" name="tearDown" is-config="true" duration-ms="66" started-at="2019-01-24T12:48:03Z" finished-at="2019-01-24T12:48:03Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@1fee20c]" name="tearDown" is-config="true" duration-ms="42" started-at="2019-03-08T17:03:22Z" finished-at="2019-03-08T17:03:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=pruebaCantidadDeCampos status=SUCCESS method=Tests.pruebaCantidadDeCampos()[pri:0, instance:tests.Tests@13fee20c] output={null}]]]>
+                <![CDATA[[TestResult name=pruebaCantidadDeCampos status=SUCCESS method=Tests.pruebaCantidadDeCampos()[pri:0, instance:tests.Tests@1fee20c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@13fee20c]" name="setUp" is-config="true" duration-ms="4384" started-at="2019-01-24T12:48:03Z" finished-at="2019-01-24T12:48:07Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@1fee20c]" name="setUp" is-config="true" duration-ms="9017" started-at="2019-03-08T17:03:22Z" finished-at="2019-03-08T17:03:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="pruebaTituloEnUsuario()[pri:0, instance:tests.Tests@13fee20c]" name="pruebaTituloEnUsuario" duration-ms="221" started-at="2019-01-24T12:48:07Z" finished-at="2019-01-24T12:48:07Z">
+        <test-method status="PASS" signature="pruebaTituloEnUsuario()[pri:0, instance:tests.Tests@1fee20c]" name="pruebaTituloEnUsuario" duration-ms="181" started-at="2019-03-08T17:03:32Z" description="Verificar título correcto en el login" finished-at="2019-03-08T17:03:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pruebaTituloEnUsuario -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@13fee20c]" name="tearDown" is-config="true" duration-ms="50" started-at="2019-01-24T12:48:07Z" finished-at="2019-01-24T12:48:07Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@1fee20c]" name="tearDown" is-config="true" duration-ms="320" started-at="2019-03-08T17:03:32Z" finished-at="2019-03-08T17:03:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=pruebaTituloEnUsuario status=SUCCESS method=Tests.pruebaTituloEnUsuario()[pri:0, instance:tests.Tests@13fee20c] output={null}]]]>
+                <![CDATA[[TestResult name=pruebaTituloEnUsuario status=SUCCESS method=Tests.pruebaTituloEnUsuario()[pri:0, instance:tests.Tests@1fee20c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@13fee20c]" name="setUp" is-config="true" duration-ms="4648" started-at="2019-01-24T12:48:07Z" finished-at="2019-01-24T12:48:12Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@1fee20c]" name="setUp" is-config="true" duration-ms="6407" started-at="2019-03-08T17:03:32Z" finished-at="2019-03-08T17:03:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="pruebaTres()[pri:0, instance:tests.Tests@13fee20c]" name="pruebaTres" duration-ms="60475" started-at="2019-01-24T12:48:12Z" finished-at="2019-01-24T12:49:13Z">
+        <test-method status="PASS" signature="pruebaTres()[pri:0, instance:tests.Tests@1fee20c]" name="pruebaTres" duration-ms="6190" started-at="2019-03-08T17:03:38Z" description="Seleccionar puerto Londres" finished-at="2019-03-08T17:03:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pruebaTres -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@13fee20c]" name="tearDown" is-config="true" duration-ms="49" started-at="2019-01-24T12:49:13Z" finished-at="2019-01-24T12:49:13Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@1fee20c]" name="tearDown" is-config="true" duration-ms="38" started-at="2019-03-08T17:03:45Z" finished-at="2019-03-08T17:03:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=pruebaTres status=SUCCESS method=Tests.pruebaTres()[pri:0, instance:tests.Tests@13fee20c] output={null}]]]>
+                <![CDATA[[TestResult name=pruebaTres status=SUCCESS method=Tests.pruebaTres()[pri:0, instance:tests.Tests@1fee20c] output={null}]]]>
               </value>
             </param>
           </params>

@@ -38,7 +38,7 @@ public class Tests {
 		
 	}
 	
-	@Test
+	@Test(description="Login Incorrecto")
 	public void loginIncorrecto() {
 		WebDriverManager.setWindowSize(driver, "maximized");
 		//driver.switchTo().window(tabs.get(1)).navigate().to("http://www.youtube.com/user/Draculinio");
@@ -49,7 +49,7 @@ public class Tests {
 		pageLogon.assertLogonPage();
 	}
 	
-	@Test
+	@Test(description="Login con credenciales correctas")
 	public void login() {
 		WebDriverManager.setWindowSize(driver, "fullscreen");
 		PageLogin pageLogin = new PageLogin(driver);
@@ -58,7 +58,7 @@ public class Tests {
 		pageReservation.assertPage();
 	}
 	
-	@Test
+	@Test(description="Seleccionar puerto Londres")
 	public void pruebaTres() {
 		WebDriverManager.setWindowSize(driver,400,400);
 		PageLogin pageLogin = new PageLogin(driver);
@@ -70,13 +70,13 @@ public class Tests {
 		
 	}
 	
-	@Test
+	@Test(description="Verificar la cantidad de campos que tiene el login")
 	public void pruebaCantidadDeCampos() {
 		PageLogin pageLogin = new PageLogin(driver);
 		pageLogin.verifyFields();
 	}
 	
-	@Test
+	@Test(description="Verificar título correcto en el login")
 	public void pruebaTituloEnUsuario() {
 		PageLogin pageLogin = new PageLogin(driver);
 		pageLogin.putTitleInUserField();
@@ -84,6 +84,7 @@ public class Tests {
 	
 	@AfterMethod
 	public void tearDown(ITestResult result) {
+		System.out.println("El test "+ result.getMethod().getDescription()+ " resultó: "+result.getStatus());
 		if(!result.isSuccess()){
 			Screenshooter.takeScreenshot("Error", driver);
 		}
