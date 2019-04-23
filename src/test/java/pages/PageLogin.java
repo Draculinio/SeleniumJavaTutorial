@@ -48,7 +48,7 @@ public class PageLogin {
 	}
 	
 	public void verifyFields() {
-		Assert.assertTrue(fields.size()==5);
+		Assert.assertTrue(fields.size()==4);
 	}
 	
 	public void putTitleInUserField() {

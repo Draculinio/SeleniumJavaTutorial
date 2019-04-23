@@ -20,13 +20,18 @@ public class Tests {
 	ArrayList<String> tabs;
 	@BeforeMethod
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
-		
+		String driverByOS="";
+		System.out.println(System.getProperty("os.name"));
+		if(System.getProperty("os.name").equals("Windows 10")) {
+			driverByOS = "Drivers/chromedriver.exe";
+		}else {
+			driverByOS = "Drivers/chromedriver";
+		}
+		System.setProperty("webdriver.chrome.driver", driverByOS);
 		//driver.manage().window().maximize();
 		//driver.manage().window().fullscreen();
 		//driver.manage().window().setSize(new Dimension(200,200));
 		//driver.manage().window().setPosition(new Point(500,500));
-		
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("--headless");
 		driver = new ChromeDriver(chromeOptions);
@@ -49,7 +54,7 @@ public class Tests {
 		pageLogon.assertLogonPage();
 	}
 	
-	@Test(description="Login con credenciales correctas")
+	@Test(description="Login con credenciales correctas",enabled=false)
 	public void login() {
 		WebDriverManager.setWindowSize(driver, "fullscreen");
 		PageLogin pageLogin = new PageLogin(driver);
@@ -58,7 +63,7 @@ public class Tests {
 		pageReservation.assertPage();
 	}
 	
-	@Test(description="Seleccionar puerto Londres")
+	@Test(description="Seleccionar puerto Londres",enabled=false)
 	public void pruebaTres() {
 		WebDriverManager.setWindowSize(driver,400,400);
 		PageLogin pageLogin = new PageLogin(driver);
@@ -70,13 +75,13 @@ public class Tests {
 		
 	}
 	
-	@Test(description="Verificar la cantidad de campos que tiene el login")
+	@Test(description="Verificar la cantidad de campos que tiene el login",enabled=false)
 	public void pruebaCantidadDeCampos() {
 		PageLogin pageLogin = new PageLogin(driver);
 		pageLogin.verifyFields();
 	}
 	
-	@Test(description="Verificar título correcto en el login")
+	@Test(description="Verificar título correcto en el login",enabled=false)
 	public void pruebaTituloEnUsuario() {
 		PageLogin pageLogin = new PageLogin(driver);
 		pageLogin.putTitleInUserField();

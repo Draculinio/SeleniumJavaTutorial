@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-tests.Tests">
-              <span class="suite-name border-failed">tests.Tests</span>
+              <span class="suite-name border-passed">tests.Tests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-tests.Tests" class="hide-methods failed suite-tests.Tests"> (hide)</a> <!-- hide-methods failed suite-tests.Tests -->
-                      <a href="#" panel-name="suite-tests.Tests" class="show-methods failed suite-tests.Tests"> (show)</a> <!-- show-methods failed suite-tests.Tests -->
-                    </span>
-                    <div class="method-list-content failed suite-tests.Tests">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-tests.Tests" title="tests.Tests" hash-for-method="login">login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-tests.Tests -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,21 +103,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-tests.Tests" title="tests.Tests" hash-for-method="loginIncorrecto">loginIncorrecto</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-tests.Tests" title="tests.Tests" hash-for-method="pruebaCantidadDeCampos">pruebaCantidadDeCampos</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-tests.Tests" title="tests.Tests" hash-for-method="pruebaTituloEnUsuario">pruebaTituloEnUsuario</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-tests.Tests" title="tests.Tests" hash-for-method="pruebaTres">pruebaTres</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-tests.Tests -->
@@ -146,50 +117,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-tests.Tests" class="panel tests.Tests">
-          <div class="suite-tests.Tests-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.Tests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/font&quot;}
-  (Session info: headless chrome=72.0.3626.121)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;SOFIA&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\Pablo\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54688}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
-Session ID: 74144984f91a445fceb6762d5b1624ef
-*** Element info: {Using=xpath, value=/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/font}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-	at pages.PageReservation.assertPage(PageReservation.java:29)
-	at tests.Tests.login(Tests.java:58)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Login con credenciales correctas)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-tests.Tests-class-failed -->
           <div class="suite-tests.Tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -203,33 +130,6 @@ Session ID: 74144984f91a445fceb6762d5b1624ef
                   <span class="method-name">loginIncorrecto</span>
                   <em>
 (Login Incorrecto)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="pruebaCantidadDeCampos">
-                  </a> <!-- pruebaCantidadDeCampos -->
-                  <span class="method-name">pruebaCantidadDeCampos</span>
-                  <em>
-(Verificar la cantidad de campos que tiene el login)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="pruebaTituloEnUsuario">
-                  </a> <!-- pruebaTituloEnUsuario -->
-                  <span class="method-name">pruebaTituloEnUsuario</span>
-                  <em>
-(Verificar título correcto en el login)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="pruebaTres">
-                  </a> <!-- pruebaTres -->
-                  <span class="method-name">pruebaTres</span>
-                  <em>
-(Seleccionar puerto Londres)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -285,32 +185,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'login')
+data.setCell(0, 1, 'loginIncorrecto')
 data.setCell(0, 2, 'tests.Tests')
-data.setCell(0, 3, 13442);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'pruebaTres')
-data.setCell(1, 2, 'tests.Tests')
-data.setCell(1, 3, 6190);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginIncorrecto')
-data.setCell(2, 2, 'tests.Tests')
-data.setCell(2, 3, 3089);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'pruebaTituloEnUsuario')
-data.setCell(3, 2, 'tests.Tests')
-data.setCell(3, 3, 181);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'pruebaCantidadDeCampos')
-data.setCell(4, 2, 'tests.Tests')
-data.setCell(4, 3, 29);
+data.setCell(0, 3, 3143);
 window.suiteTableData['tests.Tests']= { tableData: data, tableDiv: 'times-div-tests.Tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-tests.Tests">
               </div> <!-- times-div-tests.Tests -->
             </div> <!-- times-div -->
@@ -325,9 +209,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-tests.Tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.Tests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">pruebaTres</span>
+                <br/>
+                <span class="ignored-method-name">pruebaCantidadDeCampos</span>
+                <br/>
+                <span class="ignored-method-name">pruebaTituloEnUsuario</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-tests.Tests" class="panel">
@@ -342,62 +239,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">login</span>
-                <span class="method-start">7213 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=login status=FAILURE method=Tests.login()[pri:0, instance:tests.Tests@1fee20c] outp...)</span>
-                <span class="method-start">20847 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">21754 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <span class="method-name">loginIncorrecto</span>
-                <span class="method-start">28242 ms</span>
+                <span class="method-start">5695 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=loginIncorrecto status=SUCCESS method=Tests.loginIncorrecto()[pri:0, instance:tests...)</span>
-                <span class="method-start">31331 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">31369 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">pruebaCantidadDeCampos</span>
-                <span class="method-start">37937 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=pruebaCantidadDeCampos status=SUCCESS method=Tests.pruebaCantidadDeCampos()[pri:0, ...)</span>
-                <span class="method-start">37966 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">38009 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">pruebaTituloEnUsuario</span>
-                <span class="method-start">47026 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=pruebaTituloEnUsuario status=SUCCESS method=Tests.pruebaTituloEnUsuario()[pri:0, in...)</span>
-                <span class="method-start">47207 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">47527 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">pruebaTres</span>
-                <span class="method-start">53934 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=pruebaTres status=SUCCESS method=Tests.pruebaTres()[pri:0, instance:tests.Tests@1fe...)</span>
-                <span class="method-start">60125 ms</span>
+                <span class="method-start">8839 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

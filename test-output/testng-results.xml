@@ -1,42 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="9" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44194" started-at="2019-03-08T16:49:15Z" finished-at="2019-03-08T16:49:59Z">
+  <suite name="Suite" duration-ms="101128" started-at="2019-04-06T13:22:40Z" finished-at="2019-04-06T13:24:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44194" started-at="2019-03-08T16:49:15Z" finished-at="2019-03-08T16:49:59Z">
+    <test name="mistests" duration-ms="101128" started-at="2019-04-06T13:22:40Z" finished-at="2019-04-06T13:24:21Z">
+      <class name="testsDeMorondanga.PipiCucu">
+        <test-method status="PASS" signature="verificarAlgo()[pri:0, instance:testsDeMorondanga.PipiCucu@5c3bd550]" name="verificarAlgo" duration-ms="2" started-at="2019-04-06T13:24:21Z" finished-at="2019-04-06T13:24:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificarAlgo -->
+        <test-method status="PASS" signature="verificarMultiplicacion()[pri:0, instance:testsDeMorondanga.PipiCucu@5c3bd550]" name="verificarMultiplicacion" duration-ms="1" started-at="2019-04-06T13:24:21Z" finished-at="2019-04-06T13:24:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificarMultiplicacion -->
+      </class> <!-- testsDeMorondanga.PipiCucu -->
+      <class name="tests.Cuentas">
+        <test-method status="PASS" signature="verificarResta()[pri:0, instance:tests.Cuentas@1bce4f0a]" name="verificarResta" duration-ms="14" started-at="2019-04-06T13:22:40Z" finished-at="2019-04-06T13:22:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificarResta -->
+        <test-method status="PASS" signature="verificarSuma()[pri:0, instance:tests.Cuentas@1bce4f0a]" name="verificarSuma" duration-ms="1" started-at="2019-04-06T13:22:40Z" finished-at="2019-04-06T13:22:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificarSuma -->
+      </class> <!-- tests.Cuentas -->
       <class name="tests.Tests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@1e88b3c]" name="setUp" is-config="true" duration-ms="5073" started-at="2019-03-08T16:49:15Z" finished-at="2019-03-08T16:49:20Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@5e3a8624]" name="setUp" is-config="true" duration-ms="19387" started-at="2019-04-06T13:22:40Z" finished-at="2019-04-06T13:22:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="login()[pri:0, instance:tests.Tests@1e88b3c]" name="login" duration-ms="13068" started-at="2019-03-08T16:49:20Z" description="Loguin válido" finished-at="2019-03-08T16:49:33Z">
+        <test-method status="FAIL" signature="login()[pri:0, instance:tests.Tests@5e3a8624]" name="login" duration-ms="14320" started-at="2019-04-06T13:22:59Z" description="Login con credenciales correctas" finished-at="2019-04-06T13:23:14Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/font"}
-  (Session info: headless chrome=72.0.3626.121)
+  (Session info: headless chrome=73.0.3683.86)
   (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'SOFIA', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\Pablo\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54456}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
-Session ID: 7d48dc08792ffb43dadb6601aa6c63f8
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\Pablo\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51965}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: a3dd117166d7792a3633e115e56fda5a
 *** Element info: {Using=xpath, value=/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/font}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/font"}
-  (Session info: headless chrome=72.0.3626.121)
+  (Session info: headless chrome=73.0.3683.86)
   (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'SOFIA', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\Pablo\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54456}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
-Session ID: 7d48dc08792ffb43dadb6601aa6c63f8
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\Pablo\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51965}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: a3dd117166d7792a3633e115e56fda5a
 *** Element info: {Using=xpath, value=/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/font}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -87,87 +107,87 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@1e88b3c]" name="tearDown" is-config="true" duration-ms="390" started-at="2019-03-08T16:49:33Z" finished-at="2019-03-08T16:49:33Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@5e3a8624]" name="tearDown" is-config="true" duration-ms="1680" started-at="2019-04-06T13:23:14Z" finished-at="2019-04-06T13:23:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=FAILURE method=Tests.login()[pri:0, instance:tests.Tests@1e88b3c] output={null}]]]>
+                <![CDATA[[TestResult name=login status=FAILURE method=Tests.login()[pri:0, instance:tests.Tests@5e3a8624] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@1e88b3c]" name="setUp" is-config="true" duration-ms="4062" started-at="2019-03-08T16:49:33Z" finished-at="2019-03-08T16:49:37Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@5e3a8624]" name="setUp" is-config="true" duration-ms="12045" started-at="2019-04-06T13:23:16Z" finished-at="2019-04-06T13:23:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginIncorrecto()[pri:0, instance:tests.Tests@1e88b3c]" name="loginIncorrecto" duration-ms="3062" started-at="2019-03-08T16:49:37Z" description="Logueandose con un usuario incorrecto" finished-at="2019-03-08T16:49:40Z">
+        <test-method status="PASS" signature="loginIncorrecto()[pri:0, instance:tests.Tests@5e3a8624]" name="loginIncorrecto" duration-ms="4766" started-at="2019-04-06T13:23:28Z" description="Login Incorrecto" finished-at="2019-04-06T13:23:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginIncorrecto -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@1e88b3c]" name="tearDown" is-config="true" duration-ms="32" started-at="2019-03-08T16:49:40Z" finished-at="2019-03-08T16:49:40Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@5e3a8624]" name="tearDown" is-config="true" duration-ms="37" started-at="2019-04-06T13:23:32Z" finished-at="2019-04-06T13:23:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginIncorrecto status=SUCCESS method=Tests.loginIncorrecto()[pri:0, instance:tests.Tests@1e88b3c] output={null}]]]>
+                <![CDATA[[TestResult name=loginIncorrecto status=SUCCESS method=Tests.loginIncorrecto()[pri:0, instance:tests.Tests@5e3a8624] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@1e88b3c]" name="setUp" is-config="true" duration-ms="3989" started-at="2019-03-08T16:49:40Z" finished-at="2019-03-08T16:49:44Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@5e3a8624]" name="setUp" is-config="true" duration-ms="15286" started-at="2019-04-06T13:23:32Z" finished-at="2019-04-06T13:23:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="pruebaCantidadDeCampos()[pri:0, instance:tests.Tests@1e88b3c]" name="pruebaCantidadDeCampos" duration-ms="31" started-at="2019-03-08T16:49:44Z" finished-at="2019-03-08T16:49:44Z">
+        <test-method status="PASS" signature="pruebaCantidadDeCampos()[pri:0, instance:tests.Tests@5e3a8624]" name="pruebaCantidadDeCampos" duration-ms="125" started-at="2019-04-06T13:23:48Z" description="Verificar la cantidad de campos que tiene el login" finished-at="2019-04-06T13:23:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pruebaCantidadDeCampos -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@1e88b3c]" name="tearDown" is-config="true" duration-ms="26" started-at="2019-03-08T16:49:44Z" finished-at="2019-03-08T16:49:45Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@5e3a8624]" name="tearDown" is-config="true" duration-ms="28" started-at="2019-04-06T13:23:48Z" finished-at="2019-04-06T13:23:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=pruebaCantidadDeCampos status=SUCCESS method=Tests.pruebaCantidadDeCampos()[pri:0, instance:tests.Tests@1e88b3c] output={null}]]]>
+                <![CDATA[[TestResult name=pruebaCantidadDeCampos status=SUCCESS method=Tests.pruebaCantidadDeCampos()[pri:0, instance:tests.Tests@5e3a8624] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@1e88b3c]" name="setUp" is-config="true" duration-ms="4127" started-at="2019-03-08T16:49:45Z" finished-at="2019-03-08T16:49:49Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@5e3a8624]" name="setUp" is-config="true" duration-ms="11619" started-at="2019-04-06T13:23:48Z" finished-at="2019-04-06T13:23:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="pruebaTituloEnUsuario()[pri:0, instance:tests.Tests@1e88b3c]" name="pruebaTituloEnUsuario" duration-ms="187" started-at="2019-03-08T16:49:49Z" finished-at="2019-03-08T16:49:49Z">
+        <test-method status="PASS" signature="pruebaTituloEnUsuario()[pri:0, instance:tests.Tests@5e3a8624]" name="pruebaTituloEnUsuario" duration-ms="179" started-at="2019-04-06T13:23:59Z" description="Verificar título correcto en el login" finished-at="2019-04-06T13:24:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pruebaTituloEnUsuario -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@1e88b3c]" name="tearDown" is-config="true" duration-ms="90" started-at="2019-03-08T16:49:49Z" finished-at="2019-03-08T16:49:49Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@5e3a8624]" name="tearDown" is-config="true" duration-ms="26" started-at="2019-04-06T13:24:00Z" finished-at="2019-04-06T13:24:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=pruebaTituloEnUsuario status=SUCCESS method=Tests.pruebaTituloEnUsuario()[pri:0, instance:tests.Tests@1e88b3c] output={null}]]]>
+                <![CDATA[[TestResult name=pruebaTituloEnUsuario status=SUCCESS method=Tests.pruebaTituloEnUsuario()[pri:0, instance:tests.Tests@5e3a8624] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@1e88b3c]" name="setUp" is-config="true" duration-ms="3980" started-at="2019-03-08T16:49:49Z" finished-at="2019-03-08T16:49:53Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@5e3a8624]" name="setUp" is-config="true" duration-ms="12366" started-at="2019-04-06T13:24:00Z" finished-at="2019-04-06T13:24:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="pruebaTres()[pri:0, instance:tests.Tests@1e88b3c]" name="pruebaTres" duration-ms="5982" started-at="2019-03-08T16:49:53Z" finished-at="2019-03-08T16:49:59Z">
+        <test-method status="PASS" signature="pruebaTres()[pri:0, instance:tests.Tests@5e3a8624]" name="pruebaTres" duration-ms="9111" started-at="2019-04-06T13:24:12Z" description="Seleccionar puerto Londres" finished-at="2019-04-06T13:24:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pruebaTres -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@1e88b3c]" name="tearDown" is-config="true" duration-ms="28" started-at="2019-03-08T16:49:59Z" finished-at="2019-03-08T16:49:59Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@5e3a8624]" name="tearDown" is-config="true" duration-ms="28" started-at="2019-04-06T13:24:21Z" finished-at="2019-04-06T13:24:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=pruebaTres status=SUCCESS method=Tests.pruebaTres()[pri:0, instance:tests.Tests@1e88b3c] output={null}]]]>
+                <![CDATA[[TestResult name=pruebaTres status=SUCCESS method=Tests.pruebaTres()[pri:0, instance:tests.Tests@5e3a8624] output={null}]]]>
               </value>
             </param>
           </params>
@@ -175,6 +195,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.Tests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- mistests -->
+  </suite> <!-- Suite -->
 </testng-results>
