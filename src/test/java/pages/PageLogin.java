@@ -15,9 +15,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 public class PageLogin {
 	private WebDriver driver;
+	
 	
 	@FindBy(name="userName")
 	private WebElement userFieldElement;
@@ -27,6 +29,8 @@ public class PageLogin {
 	private WebElement loginButtonElement;
 	@FindBy(tagName="input")
 	private List<WebElement> fields;
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[3]/form/table/tbody/tr[4]/td/table/tbody/tr[2]/td[1]/font")
+	private WebElement userNameLabel;
 	
 	//private By fields;
 	public PageLogin(WebDriver driver) {
@@ -35,6 +39,8 @@ public class PageLogin {
 	}
 	
 	public void login(String user,String pass) {
+		SoftAssert softAssert = new SoftAssert();
+		softAssert.assertEquals(userNameLabel.getText(), "Username","El texto del label de usuario es incorrecto");
 		userFieldElement.sendKeys(user);
 		passwordFieldElement.sendKeys(pass);
 		loginButtonElement.click();

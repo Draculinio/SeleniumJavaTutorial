@@ -33,8 +33,9 @@ public class Tests {
 		//driver.manage().window().setSize(new Dimension(200,200));
 		//driver.manage().window().setPosition(new Point(500,500));
 		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.addArguments("--headless");
-		driver = new ChromeDriver(chromeOptions);
+		//chromeOptions.addArguments("--headless");
+		//driver = new ChromeDriver(chromeOptions);
+		driver = new ChromeDriver();
 		driver.navigate().to("http://newtours.demoaut.com/");
 		//JavascriptExecutor javaScriptExecutor = (JavascriptExecutor)driver;
 		//String googleWindow =  "window.open('http://www.google.com')";
@@ -81,7 +82,7 @@ public class Tests {
 		pageLogin.verifyFields();
 	}
 	
-	@Test(description="Verificar título correcto en el login",enabled=false)
+	@Test(description="Verificar título correcto en el login")
 	public void pruebaTituloEnUsuario() {
 		PageLogin pageLogin = new PageLogin(driver);
 		pageLogin.putTitleInUserField();
@@ -96,5 +97,6 @@ public class Tests {
 		//driver.switchTo().window(tabs.get(1)).close();
 		//driver.switchTo().window(tabs.get(0)).close();
 		driver.close();
+		driver.quit();
 	}
 }
