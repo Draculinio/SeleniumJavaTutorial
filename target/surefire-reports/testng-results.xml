@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="3" total="5" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="tests.Tests" duration-ms="25090" started-at="2019-06-18T13:54:55Z" finished-at="2019-06-18T13:55:20Z">
+  <suite name="tests.Tests" duration-ms="28749" started-at="2019-07-04T12:59:29Z" finished-at="2019-07-04T12:59:57Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="25090" started-at="2019-06-18T13:54:55Z" finished-at="2019-06-18T13:55:20Z">
+    <test name="Command line test" duration-ms="28749" started-at="2019-07-04T12:59:29Z" finished-at="2019-07-04T12:59:57Z">
       <class name="tests.Tests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@1fee20c]" name="setUp" is-config="true" duration-ms="9142" started-at="2019-06-18T13:54:55Z" finished-at="2019-06-18T13:55:04Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@1fee20c]" name="setUp" is-config="true" duration-ms="15344" started-at="2019-07-04T12:59:29Z" finished-at="2019-07-04T12:59:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginIncorrecto()[pri:0, instance:tests.Tests@1fee20c]" name="loginIncorrecto" duration-ms="4746" started-at="2019-06-18T13:55:04Z" description="Login Incorrecto" finished-at="2019-06-18T13:55:09Z">
+        <test-method status="PASS" signature="loginIncorrecto()[pri:0, instance:tests.Tests@1fee20c]" name="loginIncorrecto" duration-ms="3601" started-at="2019-07-04T12:59:44Z" description="Login Incorrecto" finished-at="2019-07-04T12:59:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginIncorrecto -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@1fee20c]" name="tearDown" is-config="true" duration-ms="935" started-at="2019-06-18T13:55:09Z" finished-at="2019-06-18T13:55:10Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@1fee20c]" name="tearDown" is-config="true" duration-ms="1948" started-at="2019-07-04T12:59:48Z" finished-at="2019-07-04T12:59:49Z">
           <params>
             <param index="0">
               <value>
@@ -26,15 +26,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@1fee20c]" name="setUp" is-config="true" duration-ms="9136" started-at="2019-06-18T13:55:10Z" finished-at="2019-06-18T13:55:19Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@1fee20c]" name="setUp" is-config="true" duration-ms="6735" started-at="2019-07-04T12:59:49Z" finished-at="2019-07-04T12:59:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="pruebaTituloEnUsuario()[pri:0, instance:tests.Tests@1fee20c]" name="pruebaTituloEnUsuario" duration-ms="233" started-at="2019-06-18T13:55:19Z" description="Verificar título correcto en el login" finished-at="2019-06-18T13:55:19Z">
+        <test-method status="PASS" signature="pruebaTituloEnUsuario()[pri:0, instance:tests.Tests@1fee20c]" name="pruebaTituloEnUsuario" duration-ms="284" started-at="2019-07-04T12:59:56Z" description="Verificar título correcto en el login" finished-at="2019-07-04T12:59:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pruebaTituloEnUsuario -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@1fee20c]" name="tearDown" is-config="true" duration-ms="866" started-at="2019-06-18T13:55:19Z" finished-at="2019-06-18T13:55:20Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@1fee20c]" name="tearDown" is-config="true" duration-ms="796" started-at="2019-07-04T12:59:57Z" finished-at="2019-07-04T12:59:57Z">
           <params>
             <param index="0">
               <value>

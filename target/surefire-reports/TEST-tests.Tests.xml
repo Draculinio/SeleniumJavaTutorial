@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="tests.Tests" time="4.979" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="tests.Tests" time="3.896" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_172\jre\bin"/>
@@ -50,7 +50,7 @@
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="es"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.version" value="1.8.0_172"/>
     <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_172\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk1.8.0_172\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_172\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_172\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.8.0_172\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_172\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_172\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_172\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_172\jre\classes"/>
@@ -65,6 +65,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase classname="tests.Tests" name="loginIncorrecto" time="4.749"/>
-  <testcase classname="tests.Tests" name="pruebaTituloEnUsuario" time="0.23"/>
+  <testcase classname="tests.Tests" name="loginIncorrecto" time="3.611"/>
+  <testcase classname="tests.Tests" name="pruebaTituloEnUsuario" time="0.285"/>
 </testsuite>
